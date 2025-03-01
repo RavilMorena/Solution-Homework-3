@@ -23,6 +23,14 @@ class Dungeon {
         this.npcs = npcs;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
     public void showDetails() {
         System.out.println("Dungeon: " + name);
         System.out.println("Rooms: " + rooms.size());
@@ -39,6 +47,14 @@ class SimpleDungeonBuilder implements IDungeonBuilder {
     public IDungeonBuilder setDungeonName(String name) {
         this.name = name;
         return this;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public IDungeonBuilder addRoom(Room room) {
@@ -71,6 +87,22 @@ class Room implements CloneableGameEntity {
         this.description = description;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
     @Override
     public CloneableGameEntity cloneEntity() {
         return new Room(name, description);
@@ -88,6 +120,22 @@ class NPC implements CloneableGameEntity {
 
     public NPC(String name, String role) {
         this.name = name;
+        this.role = role;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getRole() {
+        return role;
+    }
+
+    public void setRole(String role) {
         this.role = role;
     }
 
