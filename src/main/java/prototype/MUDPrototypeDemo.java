@@ -1,4 +1,3 @@
-// prototype/MUDPrototypeDemo.java
 package prototype;
 
 public class MUDPrototypeDemo {

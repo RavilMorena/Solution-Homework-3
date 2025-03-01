@@ -1,4 +1,3 @@
-// builder/IDungeonBuilder.java
 package builder;
 
 import prototype.NPC;

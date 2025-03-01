@@ -1,4 +1,3 @@
-// prototype/NPC.java
 package prototype;
 
 public class NPC implements CloneableGameEntity {

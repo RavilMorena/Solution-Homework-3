@@ -1,4 +1,3 @@
-// builder/MUDBuilderDemo.java
 package builder;
 
 import prototype.NPC;

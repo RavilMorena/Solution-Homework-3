@@ -1,4 +1,3 @@
-// prototype/Room.java
 package prototype;
 
 public class Room implements CloneableGameEntity {
